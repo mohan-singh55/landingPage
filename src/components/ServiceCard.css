@@ -1,0 +1,68 @@
+.service-card {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 40px 30px;
+    border-radius: 20px;
+    flex: 1;
+    position: relative;
+    transition: 0.4s;
+}
+
+.fa-tooth {
+    font-size: 100px;
+    color: var(--btn-color);
+    padding-bottom: 40px;
+}
+
+.hover-link {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.service-card:hover :is(.fa-tooth, h3) {
+    color: #fff;
+}
+
+.service-card:hover .hover-link {
+    opacity: 1;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    transition: 0.4s;
+}
+
+.service-card:hover {
+    background-color: var(--btn-color);
+    transition: 0.4s;
+}
+
+.hover-link span,
+.hover-link i {
+    position: absolute;
+    color: var(--white-color);
+}
+
+.hover-link span {
+    left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hover-link i {
+    right: 30px;
+    font-size: 20px;
+}
+
+h3 {
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .service-card {
+        padding: 40px 80px;
+    }
+
+    .fa-tooth {
+        display: flex;
+        justify-content: center;
+    }
+}

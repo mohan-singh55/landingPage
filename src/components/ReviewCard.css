@@ -1,0 +1,83 @@
+.review-card {
+    padding: 50px;
+    box-shadow: var(--box-shadow);
+    flex: 1;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.review-card :is(.patient-img, .patient-img img) {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.patient-div {
+    display: flex;
+}
+
+.patient-name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.common-para.pd-bottom {
+    margin-bottom: 20px;
+}
+
+.quote-icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -30px;
+    right: -30px;
+    background-color: var(--btn-color);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-icon i {
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.swiper {
+    max-width: 90%;
+    padding: 30px !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0 !important;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .quote-icon {
+        width: 50px;
+        height: 50px;
+        top: -20px;
+        right: -20px;
+    }
+
+    .quote-icon i {
+        color: var(--white-color);
+        font-size: 20px;
+    }
+
+    .review-card {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .swiper {
+        max-width: 100%;
+    }
+}

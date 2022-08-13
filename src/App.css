@@ -1,0 +1,344 @@
+/* common css */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+a {
+  cursor: pointer;
+}
+
+h3,
+h4 {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.wrapper-width {
+  width: 85%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.main-heading {
+  font-size: 54px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.common-para {
+  font-size: 20px;
+  line-height: 39px;
+  margin-bottom: 50px;
+  color: var(--text-color);
+}
+
+.specialist-field {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.btn,
+.contact {
+  background-color: var(--btn-color);
+  color: var(--white-color);
+  border-radius: 50px;
+  transition: 0.4s;
+  font-weight: 600;
+  border: 1px solid var(--btn-color);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 15px 40px;
+}
+
+.btn:hover {
+  color: var(--btn-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--btn-color);
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Appointment css starts from here */
+
+.appointment-wrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.left-section {
+  flex: 0 0 50%;
+}
+
+.left-section h4 {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.second-btn {
+  background-color: var(--white-color);
+  color: var(--btn-color);
+  font-weight: 600;
+  padding: 15px 70px;
+  border-radius: 50px;
+  margin-left: 20px;
+  border: 1px solid var(--btn-color);
+  cursor: pointer;
+}
+
+.right-section {
+  background-color: #EBEEFF;
+  flex: 0 0 45%;
+  height: 650px;
+  border-radius: 32px;
+}
+
+/* Service section css starts from here */
+
+.service-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: baseline;
+}
+
+/* Innovative section starts from here */
+
+.wrapper.innovative-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 200px;
+}
+
+.three-img-section {
+  flex: 0 0 50%;
+}
+
+/* Specialist section starts from here */
+
+.specialist-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Review section starts from here */
+
+.review-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Newsletter section starts from here */
+
+.newsletter-section {
+  background-color: var(--btn-color);
+  border-radius: 20px;
+  padding: 50px 0 100px;
+}
+
+.newsletter-section :is(.common-para, .main-heading) {
+  color: var(--white-color);
+}
+
+.newsletter-text {
+  margin-bottom: 80px;
+}
+
+.input-field-wrapper {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.input-field-wrapper input {
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 20px;
+  flex: 1;
+}
+
+.input-field-wrapper input::placeholder {
+  color: #9B9B9B;
+}
+
+.footer-section .footer-hide {
+  display: none;
+}
+
+footer {
+  background-color: #ECF4FFed;
+  padding: 50px 0 100px 100px;
+  margin-top: 50px;
+}
+
+footer i {
+  background-color: #F7FBFF;
+  width: 51px;
+  height: 51px;
+  font-size: 18px;
+  border-radius: 100%;
+  color: #7F7F7F;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+footer .copyright {
+  color: #667C94;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* responsive css for mobile view */
+
+@media only screen and (max-width: 767px) {
+
+  /* common responsive css */
+
+  .main-heading {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h3,
+  h4 {
+    font-size: 22px;
+  }
+
+  .common-para {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .btn,
+  .second-btn,
+  .second-btn {
+    font-size: 15px;
+  }
+
+  .wrapper-width {
+    margin-top: 60px;
+    width: 90%;
+  }
+
+  /* Appointment css starts from here */
+
+  .appointment-wrapper {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .left-section h4 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .second-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+
+  .right-section {
+    height: 200px;
+    flex: unset;
+    width: 100%;
+  }
+
+  /* Service section css starts from here */
+
+  .service-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p br {
+    display: none;
+  }
+
+  /* Innovative section starts from here */
+
+  .wrapper.innovative-wrapper {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+
+  .innovative-wrapper .left-section {
+    display: grid;
+    place-items: center;
+  }
+
+  /* Specialist section starts from here */
+
+  .specialist-section {
+    flex-direction: column;
+  }
+
+  /* Newsletter section starts from here */
+
+  .input-field-wrapper input {
+    font-size: 16px;
+    flex: unset;
+    width: 160px;
+    padding: 10px;
+  }
+
+  .input-field-wrapper {
+    padding: 10px;
+    width: 300px;
+    gap: 10px;
+  }
+
+  .newsletter-text {
+    margin-bottom: 30px;
+  }
+
+  .newsletter-section {
+    padding: 30px 10px 70px;
+  }
+
+  /* footer css */
+
+  footer {
+    padding: 40px 10px;
+  }
+
+  footer>div {
+    text-align: center;
+  }
+}
